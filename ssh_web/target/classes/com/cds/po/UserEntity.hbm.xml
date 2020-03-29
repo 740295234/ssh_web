@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!--<!DOCTYPE hibernate-mapping PUBLIC-->
+<!--     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"-->
+<!--     "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">-->
+<!-- &lt;!&ndash; 配置实体关系映射文件 &ndash;&gt;-->
+<!--<hibernate-mapping package= "com.cds.po">-->
+<!--     <class name ="UserEntity" table="users" lazy="true">-->
+<!--           &lt;!&ndash; 配置实体的主键 &ndash;&gt;-->
+<!--            <id name ="userid" type="int">-->
+<!--                 <column name ="userid"></column>-->
+<!--                 <generator class ="increment"></generator>-->
+<!--            </id>-->
+<!--            &lt;!&ndash; 配置实体的属性 &ndash;&gt;-->
+<!--            <property name ="username" type="java.lang.String">-->
+<!--                 <column name ="username"></column>-->
+<!--            </property>-->
+<!--            <property name ="password" type="java.lang.String">-->
+<!--                 <column name ="password"></column>-->
+<!--</property>-->
+<!--<property name ="email" type="java.lang.String">-->
+<!--                 <column name ="email"></column>-->
+<!--            </property>-->
+<!--            <property name ="address" type="java.lang.String">-->
+<!--                 <column name ="address"></column>-->
+<!--            </property>-->
+<!--<property name ="name" type="java.lang.String">-->
+<!--                 <column name ="name"></column>-->
+<!--</property>-->
+<!--<property name ="sex" type="java.lang.String">-->
+<!--                 <column name ="sex"></column>-->
+<!--</property>-->
+<!--<property name ="phone" type="java.lang.String">-->
+<!--                 <column name ="phone"></column>-->
+<!--</property>-->
+<!--<property name ="post" type="java.lang.String">-->
+<!--                 <column name ="post"></column>-->
+<!--</property>-->
+<!--<property name ="money" type="double">-->
+<!--                 <column name ="money"></column>-->
+<!--            </property>-->
+<!--     </class>-->
+<!--</hibernate-mapping>-->
+<!--<?xml version='1.0' encoding='utf-8'?>-->
+<!--<!DOCTYPE hibernate-mapping PUBLIC-->
+        <!--"-//Hibernate/Hibernate Mapping DTD 3.0//EN"-->
+        <!--"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">-->
+<hibernate-mapping>
+
+    <class name="com.cds.po.UserEntity" table="users">
+        <id name="userId" type="int">
+            <column name="userId"/>
+
+            <generator class="increment"/>
+        </id>
+        <property name="username" type="java.lang.String">
+            <column name="username"/>
+        </property>
+        <property name="password" type="java.lang.String">
+            <column name="password"/>
+        </property>
+        <property name="email" type="java.lang.String">
+            <column name="email"/>
+        </property>
+        <property name="address" type="java.lang.String">
+            <column name="address"/>
+        </property>
+        <property name="name" type="java.lang.String">
+            <column name="name"/>
+        </property>
+        <property name="sex" type="java.lang.String">
+            <column name="sex"/>
+        </property>
+        <property name="phone" type="java.lang.String">
+            <column name="phone"/>
+        </property>
+        <property name="post" type="java.lang.String">
+            <column name="post"/>
+        </property>
+        <property name="money" type="java.lang.Double">
+            <column name="money"/>
+        </property>
+        <!--<property name="password" type="java.lang.String">           -->
+            <!--<column name="password"/>-->
+        <!--</property>-->
+        <!--<property name="email" type="java.lang.String">-->
+            <!--                -->
+            <!--<column name="email"/>-->
+            <!--           -->
+        <!--</property>-->
+        <!--           -->
+        <!--<property name="address" type="java.lang.String">-->
+            <!--                -->
+            <!--<column name="address"/>-->
+            <!--           -->
+        <!--</property>-->
+        <!--<property name="name" type="java.lang.String">-->
+            <!--                -->
+            <!--<column name="name"/>-->
+        <!--</property>-->
+        <!--<property name="sex" type="java.lang.String">-->
+            <!--                -->
+            <!--<column name="sex"/>-->
+        <!--</property>-->
+        <!--<property name="phone" type="java.lang.String">-->
+            <!--                -->
+            <!--<column name="phone"/>-->
+        <!--</property>-->
+        <!--<property name="post" type="java.lang.String">-->
+            <!--                -->
+            <!--<column name="post"/>-->
+        <!--</property>-->
+        <!--<property name="money" type="java.lang.Double">-->
+            <!--                -->
+            <!--<column name="money"/>-->
+            <!--           -->
+        <!--</property>-->
+    </class>
+
+</hibernate-mapping>
